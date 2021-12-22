@@ -55,12 +55,7 @@ def find_meta(meta, meta_file=read(META_PATH)):
 if __name__ == "__main__":
     setup(
         name=NAME,
-        use_scm_version={
-            "write_to": os.path.join(
-                "src", NAME, "{0}_version.py".format(NAME)
-            ),
-            "write_to_template": '__version__ = "{version}"\n',
-        },
+        version="1.0",
         author=find_meta("author"),
         author_email=find_meta("email"),
         maintainer=find_meta("author"),

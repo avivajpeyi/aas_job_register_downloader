@@ -24,12 +24,14 @@ class TestCli(unittest.TestCase):
 
     @pytest.mark.slow
     def test_with_descriptions(self):
-        testargs = ["-v"]
+        testargs = ["command", "-v"]
         with patch.object(sys, "argv", testargs):
             main()
 
     def test_without_descriptions(self):
-        main()
+        testargs = ["command"]
+        with patch.object(sys, "argv", testargs):
+            main()
 
 
 if __name__ == "__main__":

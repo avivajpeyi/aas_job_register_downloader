@@ -1,11 +1,10 @@
+from http import HTTPStatus
+
+import numpy as np
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
-from http import HTTPStatus
-
-import pandas as pd
-
-import numpy as np
 
 
 def download_page(url) -> BeautifulSoup:

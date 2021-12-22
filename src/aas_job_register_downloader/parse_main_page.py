@@ -1,6 +1,8 @@
-from bs4 import BeautifulSoup
-from typing import List, Dict
+from typing import Dict, List
+
 import pandas as pd
+from bs4 import BeautifulSoup
+
 from .html_parser import Table, download_page
 
 MAIN = "https://jobregister.aas.org"
