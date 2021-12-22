@@ -23,10 +23,7 @@ CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-INSTALL_REQUIRES = [
-    "beautifulsoup4",
-    "pandas",
-]
+INSTALL_REQUIRES = ["beautifulsoup4", "pandas"]
 EXTRA_REQUIRE = {"test": ["pytest>=3.6"]}
 EXTRA_REQUIRE["dev"] = EXTRA_REQUIRE["test"] + [
     "pre-commit",
@@ -74,7 +71,6 @@ if __name__ == "__main__":
         long_description=read("README.md"),
         long_description_content_type="text/markdown",
         packages=PACKAGES,
-        package_data={"tess_atlas": ["notebook_templates/*"]},
         package_dir={"": "src"},
         include_package_data=True,
         install_requires=INSTALL_REQUIRES,
@@ -83,12 +79,7 @@ if __name__ == "__main__":
         zip_safe=True,
         entry_points={
             "console_scripts": [
-                "run_toi=tess_atlas.notebook_preprocessors.run_toi:main",
-                "run_tois=tess_atlas.notebook_preprocessors.run_tois:main",
-                "runs_stats_plotter=tess_atlas.analysis.stats_plotter:main",
-                "make_webpages=tess_atlas.webbuilder.build_pages:main",
-                "make_slurm_job=tess_atlas.slurm_job_generator.slurm_job_generator:main",
-                "download_toi=tess_atlas.api.download_analysed_toi:main",
+                "download_aas_jobs=aas_job_register_downloader.cli:main"
             ]
         },
     )

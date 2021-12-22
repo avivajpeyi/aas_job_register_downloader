@@ -48,3 +48,4 @@ tests/test_notebooks/
 *-blx.aux
 *-blx.bib
 /tests/test_plotout/
+/tests/out_test/
