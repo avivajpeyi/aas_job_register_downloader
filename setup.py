@@ -23,7 +23,7 @@ CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-INSTALL_REQUIRES = ["beautifulsoup4", "pandas"]
+INSTALL_REQUIRES = ["beautifulsoup4", "pandas", "requests"]
 EXTRA_REQUIRE = {"test": ["pytest>=3.6"]}
 EXTRA_REQUIRE["dev"] = EXTRA_REQUIRE["test"] + [
     "pre-commit",
