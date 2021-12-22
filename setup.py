@@ -55,7 +55,7 @@ def find_meta(meta, meta_file=read(META_PATH)):
 if __name__ == "__main__":
     setup(
         name=NAME,
-        version="1.0",
+        version="1.1",
         author=find_meta("author"),
         author_email=find_meta("email"),
         maintainer=find_meta("author"),
