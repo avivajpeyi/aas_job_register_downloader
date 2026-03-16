@@ -27,7 +27,7 @@ def save_table(with_descriptions=False):
             table["Description"] = get_descriptions(table.Link)
         table.to_csv(FILENAME, index=False)
         print(style.GREEN + f"{FILENAME} saved" + style.RESET)
-        print("Happy job hunting \U0000263A")
+        print("Happy job hunting \U0000263a")
 
 
 def get_descriptions(links: List[str]):
